@@ -35,7 +35,7 @@ const displayData = () => {
             card.innerHTML += `
             <div id="card-div" class="${title.split(" ").join("")}">
                 <div class="card">
-                    <div class="title">${title} <img src="/images/icon-ellipsis.svg"></div>
+                    <div class="title">${title} <img src="images/icon-ellipsis.svg" alt="An ellipsis"></div>
 
                     <div class="current-time">${timeframes.daily.current}hrs<span class="previous-time">Yesterday - ${timeframes.daily.previous}hrs</span></div>
                 </div>

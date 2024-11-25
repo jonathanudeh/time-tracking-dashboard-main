@@ -277,7 +277,7 @@ footer {
 
 .Work {
     background-color: var(--Light-red-work);
-    background-image: url(/images/icon-work.svg);
+    background-image: url(images/icon-work.svg);
     background-repeat: no-repeat;
     background-position: 95% -10px;
     background-size: 60px;
@@ -285,7 +285,7 @@ footer {
 
 .Play {
     background-color: var(--Soft-blue);
-    background-image: url(/images/icon-play.svg);
+    background-image: url(./images/icon-play.svg);
     background-repeat: no-repeat;
     background-position: 95% -5px;
     background-size: 55px;
