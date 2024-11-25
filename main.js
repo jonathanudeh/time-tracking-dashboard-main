@@ -52,7 +52,7 @@ const displayData = () => {
             card.innerHTML += `
             <div id="card-div" class="${title.split(" ").join("")}">
                 <div class="card">
-                    <div class="title">${title} <img src="/images/icon-ellipsis.svg" alt="An ellipsis"></div>
+                    <div class="title">${title} <img src="./images/icon-ellipsis.svg" alt="An ellipsis"></div>
 
                     <div class="current-time">${timeframes.weekly.current}hrs<span class="previous-time">Last week - ${timeframes.weekly.previous}hrs</span></div>
                 </div>
@@ -68,7 +68,7 @@ const displayData = () => {
             card.innerHTML += `
             <div id="card-div" class="${title.split(" ").join("")}">
                 <div class="card">
-                    <div class="title">${title} <img src="/images/icon-ellipsis.svg" alt="An ellipsis"></div>
+                    <div class="title">${title} <img src="./images/icon-ellipsis.svg" alt="An ellipsis"></div>
 
                     <div class="current-time">${timeframes.monthly.current}hrs<span class="previous-time">Last month - ${timeframes.monthly.previous}hrs</span></div>
                 </div>
