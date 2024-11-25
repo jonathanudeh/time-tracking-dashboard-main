@@ -277,7 +277,7 @@ footer {
 
 .Work {
     background-color: var(--Light-red-work);
-    background-image: url(images/icon-work.svg);
+    background-image: url(./images/icon-work.svg);
     background-repeat: no-repeat;
     background-position: 95% -10px;
     background-size: 60px;
@@ -293,7 +293,7 @@ footer {
 
 .Study {
     background-color: var(--Light-red-study);
-    background-image: url(/images/icon-study.svg);
+    background-image: url(./images/icon-study.svg);
     background-repeat: no-repeat;
     background-position: 95% -5px;
     background-size: 50px;
@@ -301,7 +301,7 @@ footer {
 
 .Exercise {
     background-color: var(--Lime-green);
-    background-image: url(/images/icon-exercise.svg);
+    background-image: url(./images/icon-exercise.svg);
     background-repeat: no-repeat;
     background-position: 95% 0px;
     background-size: 55px;
@@ -309,7 +309,7 @@ footer {
 
 .Social {
     background-color: var(--Violet);
-    background-image: url(/images/icon-social.svg);
+    background-image: url(./images/icon-social.svg);
     background-repeat: no-repeat;
     background-position: 95% -10px;
     background-size: 50px;
@@ -317,7 +317,7 @@ footer {
 
 .SelfCare {
     background-color: var(--Soft-orange);
-    background-image: url(/images/icon-self-care.svg);
+    background-image: url(./images/icon-self-care.svg);
     background-repeat: no-repeat;
     background-position: 95% -10px;
     background-size: 50px;
