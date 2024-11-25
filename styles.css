@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    color: #ffff;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    max-width: 370px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .avatar-div {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 150px;
+        background-color: var(--Dark-blue);
+        border-radius: 10px;
+        margin-bottom: 20px;
+
+
+        .avatar-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70%;
+            background-color: var(--Blue);
+            border-radius: 10px;
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+                border: 3px solid #ffff;
+                border-radius: 50%;
+            }
+
+            .written-details {
+                .report {
+                    font-weight: 100;
+                    font-size: .7rem;
+                    opacity: 70%;
+                }
+
+                .avatar-name {
+                    font-weight: 100;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .period {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 30%;
+            font-size: .8rem;
+            
+            .daily {
+                opacity: 50%;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+
+            .weekly {
+                opacity: 50%;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+
+            .monthly {
+                opacity: 50%;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 100%;
+                }
+            }
+
+        }
+    }
+
+    #card-container {
+        width: 300px;
+        height: auto;
+
+        #card-div {
+            width: 300px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+
+            .card {
+                width: 100%;
+                height: 95px;
+                background-color: var(--Dark-blue);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 80%;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+
+                .current-time {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 80%;
+                    font-size: 2rem;
+                    font-weight: 100;
+
+                    .previous-time {
+                        font-weight: 100;
+                        opacity: 60%;
+                        font-size: .7rem;
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--Desaturated-blue);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    justify-self: end;
+    margin-top: auto;
+}
+
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+        max-width: 1440px;
+        margin-top: auto;
+        
+
+        .avatar-div {
+            width: 150px;
+            height: 300px;
+            display: flex;
+            margin: 0;
+            
+            .avatar-details {
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                padding: 20px;
+
+                img {
+                    margin-bottom: 20px;
+                }
+                .written-details {
+                    padding: 0px;
+                }
+                .avatar-name {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .period {
+                flex-direction: column;
+                align-items: start;
+                padding-left: 20px;
+            }
+        }
+
+        #card-container {
+            display: flex;
+            flex-direction: row;
+            width: 550px;
+            height: 300px;
+            flex-wrap: wrap;
+            margin-left: 10px;
+
+            #card-div {
+                width: 150px;
+                height: 140px;
+                margin: 0px 10px 10px 10px;
+
+                .card {
+                    width: 150px;
+                    height: 120px;
+
+                    .title {
+                        font-size: .6rem;
+
+                        img {
+                            width: 10px;
+                        }
+                    }
+
+                    .current-time {
+                        flex-direction: column;
+                        align-items: start;
+
+                        .previous-time {
+                            font-size: .6rem;
+                        }
+                    }
+                }
+            }
+
+            #card-div:nth-child(4), #card-div:nth-child(5), #card-div:nth-child(6) {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+.Work {
+    background-color: var(--Light-red-work);
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -10px;
+    background-size: 60px;
+}
+
+.Play {
+    background-color: var(--Soft-blue);
+    background-image: url(/images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -5px;
+    background-size: 55px;
+}
+
+.Study {
+    background-color: var(--Light-red-study);
+    background-image: url(/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -5px;
+    background-size: 50px;
+}
+
+.Exercise {
+    background-color: var(--Lime-green);
+    background-image: url(/images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 0px;
+    background-size: 55px;
+}
+
+.Social {
+    background-color: var(--Violet);
+    background-image: url(/images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -10px;
+    background-size: 50px;
+}
+
+.SelfCare {
+    background-color: var(--Soft-orange);
+    background-image: url(/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -10px;
+    background-size: 50px;
+}
+
+
